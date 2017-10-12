@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:src="@color/color_subline"
+        />
+
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbPiaojia"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_selector_piaojia"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="票价"
+            android:textSize="28px"
+            android:textColor="@color/tab_color_switch" />
+
+        <RadioButton
+            android:id="@+id/rbShoumoche"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/tab_selector_shoumoche"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="首末车"
+            android:textSize="28px"
+            android:textColor="@color/tab_color_switch" />
+
+        <RadioButton
+            android:id="@+id/rbMap"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_map"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="线路图"
+            android:textSize="28px"
+            android:textColor="@color/tab_color_switch" />
+
+        <RadioButton
+            android:id="@+id/rbConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_config"
+            android:drawingCacheQuality="low"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="20dp"
+            android:text="设置"
+            android:textSize="28px"
+            android:textColor="@color/tab_color_switch" />
+    </RadioGroup>
+
+
+</LinearLayout>

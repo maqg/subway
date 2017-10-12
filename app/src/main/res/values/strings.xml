@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">北京地铁票价助手</string>
+    <string name="action_settings"></string>
+    <string name="hello_world">欢迎使用北京地铁票价助手</string>
+    <string name="line_select">请选择地铁线路：</string>
+    <string name="station_select">请选择地铁站</string>
+    <string name="start_line_prompt">请选择出发线路</string>
+    <string name="start_station_prompt">请选择出发车站</string>
+    <string name="end_line_prompt">请选择目的线路</string>
+    <string name="end_station_prompt">请选择目的车站</string>
+    <string name="button_query">查询一下</string>
+    <string name="beijingMaps">北京地铁运营图</string>
+
+</resources>
