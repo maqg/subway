@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="配置"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="
+        作者：Henry.Ma\n
+        释放时间：2017年8月10日\n
+        离线数据更新时间：2017年8月10日\n
+        版本：1.1.12\n
+        简介：超级简单实用的北京地铁票价助手，采用全离线数据，可以查询所有的地铁线路票价以及首末车信息，为您的出行提供帮助（本次更新增加了16号线内容，抓取并更新了部分线路的首末车时间）。"
+        android:textSize="15sp" />
+
+
+</LinearLayout>
