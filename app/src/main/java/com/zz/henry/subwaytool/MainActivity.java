@@ -1,19 +1,17 @@
 package com.zz.henry.subwaytool;
 
 import android.graphics.Canvas;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.WindowManager;
 import android.widget.RadioGroup;
 
 
 public class MainActivity extends FragmentActivity {
 
-    private RadioGroup myTabRg;
     private FragmentMap map;
     private FragmentPiaojia piaojia;
     private FragmentShoumoche shoumoche;
@@ -30,7 +28,7 @@ public class MainActivity extends FragmentActivity {
         int heightPixels= dm.heightPixels;
         float density = dm.density;
 
-        WindowManager wm = (WindowManager) getSystemService(WINDOW_SERVICE);
+        //WindowManager wm = (WindowManager) getSystemService(WINDOW_SERVICE);
 
         Log.d("MAIN", "device display, height is " + heightPixels + ", width is " + widthPixels + "density is " + density);
 
@@ -67,6 +65,8 @@ public class MainActivity extends FragmentActivity {
     }
 
     public void initView() {
+
+        RadioGroup myTabRg;
 
         piaojia = new FragmentPiaojia();
         getSupportFragmentManager().beginTransaction().replace(R.id.main_content, piaojia).commit();
